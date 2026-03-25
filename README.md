@@ -1,4 +1,4 @@
-# NVR Monitor
+# Sentinela de Rede
 
 ![Docker Ready](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)
 ![Prometheus](https://img.shields.io/badge/Prometheus-Integrated-E6522C?logo=prometheus&logoColor=white)
