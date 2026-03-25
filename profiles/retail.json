@@ -1,0 +1,10 @@
+{
+  "id": "retail",
+  "name": "Varejo",
+  "dashboard_file": "dashboards/nvr-dashboard-retail.json",
+  "terms": {
+    "unit": "Loja",
+    "recorder": "Gravador",
+    "endpoint": "Dispositivo"
+  }
+}

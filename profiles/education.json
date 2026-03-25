@@ -1,0 +1,10 @@
+{
+  "id": "education",
+  "name": "Educacao",
+  "dashboard_file": "dashboards/nvr-dashboard.json",
+  "terms": {
+    "unit": "Escola",
+    "recorder": "NVR",
+    "endpoint": "Camera"
+  }
+}

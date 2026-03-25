@@ -1,0 +1,16 @@
+[
+  {
+    "unit_name": "Planta A",
+    "recorder_ip": "172.16.10.50",
+    "edge_ip": "172.16.10.1",
+    "network_cidr": "172.16.10.0/24",
+    "expected_endpoints": 35
+  },
+  {
+    "unit_name": "Planta B",
+    "recorder_ip": "172.16.20.50",
+    "edge_ip": "172.16.20.1",
+    "network_cidr": "172.16.20.0/24",
+    "expected_endpoints": 42
+  }
+]

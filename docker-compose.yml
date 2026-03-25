@@ -1,0 +1,60 @@
+services:
+  exporter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nvr-exporter
+    environment:
+      EXPORTER_PORT: "8000"
+      SCAN_INTERVAL_SECONDS: "300"
+      PING_TIMEOUT_SECONDS: "1"
+      SOCKET_TIMEOUT_SECONDS: "0.5"
+      SUBNET_WORKERS: "50"
+      SCHOOL_WORKERS: "1"
+      FULL_SCAN_EVERY_CYCLES: "6"
+      MAX_HOSTS_PER_SCAN: "0"
+      EXPOSE_NVR_IP_LABEL: "false"
+      UNITS_FILE: "/data/units.json"
+      SQLITE_DB_PATH: "/data/monitor.db"
+    volumes:
+      - ./units.json:/data/units.json:ro
+      - ./data:/data
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  prometheus:
+    image: prom/prometheus:v2.55.0
+    container_name: nvr-prometheus
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+    volumes:
+      - ./config/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    ports:
+      - "9090:9090"
+    depends_on:
+      - exporter
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana-oss:11.2.0
+    container_name: nvr-grafana
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: admin
+      GF_USERS_ALLOW_SIGN_UP: "false"
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./config/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./dashboards:/var/lib/grafana/dashboards:ro
+    ports:
+      - "3001:3000"
+    depends_on:
+      - prometheus
+    restart: unless-stopped
+
+volumes:
+  prometheus_data:
+  grafana_data:
