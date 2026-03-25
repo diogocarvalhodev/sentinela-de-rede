@@ -1,0 +1,11 @@
+apiVersion: 1
+
+providers:
+  - name: NVR Dashboards
+    orgId: 1
+    folder: NVR
+    type: file
+    disableDeletion: false
+    editable: true
+    options:
+      path: /var/lib/grafana/dashboards

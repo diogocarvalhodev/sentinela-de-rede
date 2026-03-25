@@ -1,0 +1,10 @@
+{
+  "id": "industrial",
+  "name": "Industrial",
+  "dashboard_file": "dashboards/nvr-dashboard-industrial.json",
+  "terms": {
+    "unit": "Unidade",
+    "recorder": "Gateway",
+    "endpoint": "Sensor"
+  }
+}

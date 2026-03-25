@@ -1,0 +1,16 @@
+[
+  {
+    "unit_name": "Loja Centro",
+    "recorder_ip": "10.20.10.10",
+    "edge_ip": "10.20.10.1",
+    "network_cidr": "10.20.10.0/24",
+    "expected_endpoints": 18
+  },
+  {
+    "unit_name": "Loja Norte",
+    "recorder_ip": "10.20.11.10",
+    "edge_ip": "10.20.11.1",
+    "network_cidr": "10.20.11.0/24",
+    "expected_endpoints": 12
+  }
+]
