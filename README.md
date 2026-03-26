@@ -1,5 +1,12 @@
 # Sentinela de Rede
 
+![Docker Ready](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-Integrated-E6522C?logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-Dashboards-F46800?logo=grafana&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-State%20Storage-003B57?logo=sqlite&logoColor=white)
+![Profiles](https://img.shields.io/badge/Profiles-Education%20%7C%20Retail%20%7C%20Industrial-6A5ACD)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+
 Sistema de monitoramento de endpoints de rede com descoberta automática de ativos, coleta de métricas em tempo real e visualização operacional através de dashboards.
 
 Projetado para simular ambientes de missão crítica com foco em observabilidade, automação e resposta rápida a incidentes.
@@ -136,6 +143,17 @@ Regenerar dashboards:
 * Deploy em ambiente cloud
 * Pipeline de CI/CD
 * Escalabilidade horizontal
+
+---
+
+## Dados e Privacidade
+1. Estado operacional em data/monitor.db.
+2. units.json usado somente para bootstrap inicial quando o banco estiver vazio.
+3. Nomes de unidades anonimizados para apresentacao publica.
+4. units.json no repositório contem apenas um registro de exemplo com IPs reservados para documentacao.
+
+## Licenca
+Este projeto esta licenciado sob a MIT License. Consulte o arquivo LICENSE.
 
 ---
 
