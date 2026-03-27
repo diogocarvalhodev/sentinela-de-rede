@@ -214,7 +214,7 @@
       "targets": [
         {
           "expr": "sum(cameras_active)",
-          "legendFormat": "Dispositivos Ativas",
+          "legendFormat": "Dispositivos Ativos",
           "refId": "A"
         },
         {
@@ -223,7 +223,7 @@
           "refId": "B"
         }
       ],
-      "title": "Dispositivos Ativas x Total",
+      "title": "Dispositivos Ativos x Total",
       "type": "timeseries"
     },
     {
@@ -294,7 +294,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Dispositivos Ativas"
+                "value": "Dispositivos Ativos"
               }
             ]
           },
@@ -557,7 +557,7 @@
           "refId": "A"
         }
       ],
-      "title": "Dispositivos Ativas por Loja (Hist\u00f3rico)",
+      "title": "Dispositivos Ativos por Loja (Hist\u00f3rico)",
       "type": "timeseries"
     },
     {
@@ -698,7 +698,7 @@
           "refId": "A"
         }
       ],
-      "title": "Total de Dispositivos Ativas",
+      "title": "Total de Dispositivos Ativos",
       "type": "stat"
     },
     {

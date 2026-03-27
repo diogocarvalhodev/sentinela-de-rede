@@ -214,7 +214,7 @@
       "targets": [
         {
           "expr": "sum(cameras_active)",
-          "legendFormat": "Sensores Ativas",
+          "legendFormat": "Sensores Ativos",
           "refId": "A"
         },
         {
@@ -223,7 +223,7 @@
           "refId": "B"
         }
       ],
-      "title": "Sensores Ativas x Total",
+      "title": "Sensores Ativos x Total",
       "type": "timeseries"
     },
     {
@@ -294,7 +294,7 @@
             "properties": [
               {
                 "id": "displayName",
-                "value": "Sensores Ativas"
+                "value": "Sensores Ativos"
               }
             ]
           },
@@ -557,7 +557,7 @@
           "refId": "A"
         }
       ],
-      "title": "Sensores Ativas por Unidade (Hist\u00f3rico)",
+      "title": "Sensores Ativos por Unidade (Hist\u00f3rico)",
       "type": "timeseries"
     },
     {
@@ -698,7 +698,7 @@
           "refId": "A"
         }
       ],
-      "title": "Total de Sensores Ativas",
+      "title": "Total de Sensores Ativos",
       "type": "stat"
     },
     {
