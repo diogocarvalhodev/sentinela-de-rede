@@ -1,0 +1,7 @@
+[
+  {
+    "name": "Unidade Exemplo",
+    "nvr_ip": "192.0.2.10",
+    "firewall_ip": "192.0.2.1"
+  }
+]
