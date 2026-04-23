@@ -15,3 +15,6 @@ data/*.db
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Docs privados
+docs/evidencias/README.md
